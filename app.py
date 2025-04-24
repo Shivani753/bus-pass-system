@@ -40,7 +40,10 @@ def register():
             "phone": phone
         }
         db.collection("Users").add(user_data)
-        return redirect('/login')
+
+        # Log in the user and redirect to dashboard
+        session['user'] = email
+        return redirect('/dashboard')
 
     return render_template('register.html')
 
