@@ -1,9 +1,3 @@
-<h2>Welcome, {{ user }}</h2>
-{% if bus_pass %}
-  <p><strong>Route:</strong> {{ bus_pass.route }}</p>
-  <p><strong>Duration:</strong> {{ bus_pass.duration }}</p>
-  <p><strong>Status:</strong> {{ bus_pass.status }}</p>
-{% else %}
-  <p>You haven't applied for a pass yet.</p>
-{% endif %}
-<a href="/apply">Apply for Pass</a> | <a href="/logout">Logout</a>
+<h2>Welcome to the Bus Pass System</h2>
+<a href="/register">Register</a> |
+<a href="/login">Login</a>
