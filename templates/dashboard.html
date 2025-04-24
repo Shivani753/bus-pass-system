@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome, {{ user }}</h2>
+    <h1>Welcome {{ user['name'] }}!</h1>
+    <p>Email: {{ user['email'] }}</p>
+    <p>Phone: {{ user['phone'] }}</p>
+    <p>User Type: {{ user['user_type'] }}</p>
+    <a href="/apply_bus_pass">Apply for Bus Pass</a><br>
     <a href="/logout">Logout</a>
 </body>
 </html>
